@@ -1,38 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <!-- Timeblocks go here -->
+    <!-- <div class="row">
+  <div class="col col-lg-2">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat excepturi unde rem quidem quod laudantium libero, rerum cum corporis nihil ipsam dolore quisquam eaque praesentium at ratione animi sed maxime.
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col col-lg-2">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quam omnis saepe dolorum, qui deleniti quaerat corporis natus praesentium ipsam, quibusdam amet culpa ullam officia facere, dolorem neque! Dolorum, hic.
+    </p>
+  </div>
+</div>
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nobis optio asperiores quas consectetur, laborum, nesciunt nam, quia adipisci numquam deserunt assumenda quo dolores unde explicabo perferendis totam pariatur perspiciatis.
+<div class="row">
+  <div class="col col-lg-2">
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet similique delectus fuga eligendi quasi harum perspiciatis, nobis ut porro itaque quae atque, alias hic necessitatibus esse aliquam incidunt veniam.
+    </p>
+  </div>
+</div> -->
+
+
+    <div class="row row-col-3 border mb-3">
+      <section class="col text-right">09:00</section>
+      <input type="text" class="form-control col-8" placeholder="addto: calendar"
+        aria-label="Example text with button addon" aria-describedby="button-addon1">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+    <div class="row row-col-3 border mb-3">
+      <section class="col text-right">10:00</section>
+      <input type="text" class="form-control col-8" placeholder="addto: calendar" aria-label="Recipient's username"
+        aria-describedby="button-addon2">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+    </div>
+
+    <div class="row row-col-3 border mb-3">
+      <section class="col text-right">11:00</section>
+      <input type="text" class="form-control col-8" placeholder="addto: calendar"
+        aria-label="Example text with two button addons">
+      <button class="btn btn-outline-secondary" type="button">Button</button>
+    </div>
+
+    <div class="row row-col-3 border mb-3">
+      <section class="col text-right">12:00</section>
+      <input type="text" class="form-control col-8" placeholder="addto: calendar"
+        aria-label="Recipient's username with two button addons">
+      <button class="btn btn-outline-secondary" type="button">Button</button>
+    </div>
+    <div class="row row-col-3 border mb-3">
+      <section class="col text-right">13:00</section>
+      <input type="text" class="form-control col-8" placeholder="addto: calendar"
+        aria-label="Example text with button addon" aria-describedby="button-addon1">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+    </div>
+
+    <div class="row row-col-3 border mb-3">
+      <section class="col text-right">14:00</section>
+      <input type="text" class="form-control col-8" placeholder="addto: calendar" aria-label="Recipient's username"
+        aria-describedby="button-addon2">
+      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+    </div>
+
+    <div class="row row-col-3 border mb-3">
+      <section class="col text-right">15:00</section>
+      <input type="text" class="form-control col-8" placeholder="addto: calendar"
+        aria-label="Example text with two button addons">
+      <button class="btn btn-outline-secondary" type="button">Button</button>
+    </div>
+
+    <div class="row row-col-3 border mb-3">
+      <section class="col text-right">16:00</section>
+      <input type="text" class="form-control col-8" placeholder="addto: calendar"
+        aria-label="Recipient's username with two button addons">
+      <button class="btn btn-outline-secondary" type="button">Button</button>
+    </div>
+
+    <div class="row row-col-3 border mb-3">
+      <section class="col text-right">17:00</section>
+      <input type="text" class="form-control col-8" placeholder="addto: calendar"
+        aria-label="Recipient's username with two button addons">
+      <button class="btn btn-outline-secondary" type="button">Button</button>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
+
 </html>
