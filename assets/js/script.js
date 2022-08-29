@@ -3,7 +3,7 @@
 function updateTime() {
     var today = moment();
 
-    $("#currentDay").text(today.format("dddd, MMMM Do YYYY, h:mm.s"));
+    $("#currentDay").text(today.format("dddd, MMMM Do"));
 
     var now = moment().format('kk');
 
