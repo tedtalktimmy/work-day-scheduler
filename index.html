@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <title>Work Day Scheduler</title>
 </head>
 
@@ -21,72 +21,65 @@
   </header>
   <div class="container">
     <!-- Timeblocks go here -->
-     <div class="row row-col-3 border">
+    <div class="row row-col-3 border">
       <section class="col text-right border">09:00</section>
-      <input type="text" class="form-control col-8" id="9am" data-hour="09" placeholder="addto: calendar"
-        aria-label="Example text with button addon" aria-describedby="button-addon1">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+      <textarea class="form-control col-8" type="text" id="9AM" data-hour="09"></textarea>
+        <div class="col border d-flex align-items-center justify-content-center save-container save-icon fas fa-save"></div>
     </div>
 
     <div class="row row-col-3 border">
       <section class="col text-right border">10:00</section>
-      <input type="text" class="form-control col-8" id="10am" data-hour="10" placeholder="addto: calendar" aria-label="Recipient's username"
-        aria-describedby="button-addon2">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+      <textarea class="form-control col-8" type="text" id="10AM" data-hour="10"></textarea>
+        <div class="col border d-flex align-items-center justify-content-center save-container save-icon fas fa-save"></div>
     </div>
 
     <div class="row row-col-3 border">
       <section class="col text-right border">11:00</section>
-      <input type="text" class="form-control col-8" id="11am" data-hour="11" placeholder="addto: calendar"
-        aria-label="Example text with two button addons">
-      <button class="btn btn-outline-secondary" type="button">Button</button>
+      <textarea class="form-control col-8" type="text" id="11AM" data-hour="11"></textarea>
+        <div class="col border d-flex align-items-center justify-content-center save-container save-icon fas fa-save"></div>
     </div>
 
     <div class="row row-col-3 border">
       <section class="col text-right border">12:00</section>
-      <input type="text" class="form-control col-8" id="12pm" data-hour="12" placeholder="addto: calendar"
-        aria-label="Recipient's username with two button addons">
-      <button class="btn btn-outline-secondary" type="button">Button</button>
+         <textarea class="form-control col-8" type="text" id="12PM" data-hour="12"></textarea>
+        <div class="col border d-flex align-items-center justify-content-center save-container save-icon fas fa-save"></div>
     </div>
     <div class="row row-col-3 border">
       <section class="col text-right border">13:00</section>
-      <input type="text" class="form-control col-8" id="1pm" data-hour="13" placeholder="addto: calendar"
-        aria-label="Example text with button addon" aria-describedby="button-addon1">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+      <textarea class="form-control col-8" type="text" id="1PM" data-hour="13"></textarea>
+        <div class="col border d-flex align-items-center justify-content-center save-container save-icon fas fa-save"></div>
     </div>
 
     <div class="row row-col-3 border">
       <section class="col text-right border">14:00</section>
-      <input type="text" class="form-control col-8" id="2pm" data-hour="14" placeholder="addto: calendar" aria-label="Recipient's username"
-        aria-describedby="button-addon2">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+      <textarea class="form-control col-8" type="text" id="2PM" data-hour="14"></textarea>
+        <div class="col border d-flex align-items-center justify-content-center save-container save-icon fas fa-save"></div>
     </div>
 
     <div class="row row-col-3 border">
       <section class="col text-right">15:00</section>
-      <input type="text" class="form-control col-8" id="3pm" data-hour="15" placeholder="addto: calendar"
-        aria-label="Example text with two button addons">
-      <button class="btn btn-outline-secondary" type="button">Button</button>
+      <textarea class="form-control col-8" type="text" id="3PM" data-hour="15"></textarea>
+        <div class="col border d-flex align-items-center justify-content-center save-container save-icon fas fa-save"></div>
     </div>
 
     <div class="row row-col-3 border">
       <section class="col text-right">16:00</section>
-      <input type="text" class="form-control col-8" id="4pm" data-hour="16" placeholder="addto: calendar"
-        aria-label="Recipient's username with two button addons">
-      <button class="btn btn-outline-secondary" type="button">Button</button>
+      <textarea class="form-control col-8" type="text" id="4PM" data-hour="16"></textarea>
+        <div class="col border d-flex align-items-center justify-content-center save-container save-icon fas fa-save"></div>
     </div>
 
     <div class="row row-col-3 border">
       <section class="col text-right">17:00</section>
-      <input type="text" class="form-control col-8" id="5pm" data-hour="17" placeholder="addto: calendar"
-        aria-label="Recipient's username with two button addons">
-      <button class="btn btn-outline-secondary" type="button">Button</button>
+      <textarea class="form-control col-8" type="text" id="5PM" data-hour="17"></textarea>
+        <div class="col border d-flex align-items-center justify-content-center save-container save-icon fas fa-save"></div>
     </div>
 
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js">
+  </script>
+  <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
